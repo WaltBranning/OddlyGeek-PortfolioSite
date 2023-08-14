@@ -1,0 +1,19 @@
+// Sitewide variables
+
+// Sizing variables
+$max-width: 1920px
+
+    
+// This site will use three main branding color for different sections
+$brand-light:   #EAEAEC
+$brand-dark:    #2C2F3A
+$brand-color:   #00B8F5
+
+
+@mixin resp-font($resp-size, $base-size: 1rem)
+    font-size: calc( $base-size + $resp-size)
+
+@mixin brand-stripe
+    background-image: repeating-linear-gradient(126deg, rgba(44,47,58,1) 0vw 10vw,rgba(234,234,236,1) 10vw 20vw, rgba(0,184,245,1) 20vw 30vw)
+
+

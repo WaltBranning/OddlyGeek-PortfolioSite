@@ -1,0 +1,25 @@
+// CSS for portfolio main styling
+@import ./variables
+@import ./header
+
+.App
+
+.contentWrapper
+    section
+        height: 100vh
+        margin: 0
+        padding: 3em
+    section:nth-child(1)
+        background-color: $brand-dark
+    section:nth-child(2)
+        background-color: $brand-light
+    section:nth-child(3)
+        background-color: $brand-color
+    section:nth-child(4)
+        @include brand-stripe
+        // background-image: repeating-linear-gradient(-45deg,transparent 0 20px,black 20px 40px, red 40px 60px)
+.contentContainer
+    max-width: $max-width
+    margin: auto
+
+        

@@ -1,0 +1,28 @@
+@import ./variables
+
+$height: 15vh
+
+header
+    // height: $height
+    // background-color: blue
+    width: 100%
+    position: fixed
+    top: 0px
+    
+.header-content
+    display: flex
+    justify-content: space-between
+    align-content: center
+    margin: auto    
+    max-width: $max-width
+
+.headerLinks
+    display: flex
+    justify-content: space-evenly
+    
+.header-link
+    padding: 2vh 1vw
+    text-decoration: none
+    color: $brand-color
+    &:hover
+        color: $brand-light

@@ -1,0 +1,50 @@
+header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: auto;
+  max-width: 1920px;
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header-link {
+  padding: 2vh 1vw;
+  text-decoration: none;
+  color: #00B8F5;
+}
+.header-link:hover {
+  color: #EAEAEC;
+}
+
+.contentWrapper section {
+  height: 100vh;
+  margin: 0;
+  padding: 3em;
+}
+.contentWrapper section:nth-child(1) {
+  background-color: #2C2F3A;
+}
+.contentWrapper section:nth-child(2) {
+  background-color: #EAEAEC;
+}
+.contentWrapper section:nth-child(3) {
+  background-color: #00B8F5;
+}
+.contentWrapper section:nth-child(4) {
+  background-image: repeating-linear-gradient(126deg, rgb(44, 47, 58) 0vw 10vw, rgb(234, 234, 236) 10vw 20vw, rgb(0, 184, 245) 20vw 30vw);
+}
+
+.contentContainer {
+  max-width: 1920px;
+  margin: auto;
+}/*# sourceMappingURL=App.css.map */
