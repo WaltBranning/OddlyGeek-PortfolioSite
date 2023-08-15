@@ -1,13 +1,21 @@
 import 'primeicons/primeicons.css'
+import meImage from '../resources/imgs/me.png'
 
 function ContentComponent () {
     return (
     <div className='contentWrapper'>
         <section>
             <div className="content" id="what-section">
-                <div id='introblock'>
-                <h1>Hi! My Name Is <span className='highlight cursive'>Walter</span></h1>
-                <h2>I am an aspiring Software Engineer. Let's create something awesome!</h2>
+                <div className='content introblock-item' id='introblock'>
+                    <div id='intro-name'>
+                        <h1>Hi! My Name Is <span className='highlight cursive'>Walter</span></h1>
+                    </div>
+                    <div id='introduction'>
+                        <h2>I am an aspiring Software Engineer. Let's create something awesome!</h2>
+                    </div>
+                    <div id='intro-more'>
+                        <span className='pi pi-forward highlight'></span>
+                    </div>
                 </div>
             </div>
         </section>

@@ -51,6 +51,7 @@ header {
   justify-content: space-between;
   align-content: center;
   margin: auto;
+  padding: 0px 15px;
   max-width: 1920px;
 }
 
@@ -111,7 +112,7 @@ header {
 
 .highlight {
   color: var(--brand-color);
-  text-shadow: 0px 0px 6px var(--brand-green-glow);
+  text-shadow: 0px 0px 6px var(--brand-color-glow);
   font-weight: bold;
   font-size: 1.15em;
 }
@@ -125,7 +126,7 @@ header {
 }
 
 .contentWrapper section {
-  height: 100vh;
+  height: 93.25vh;
   margin: 0;
   padding: 3em;
 }
@@ -144,13 +145,18 @@ header {
 
 .content {
   display: flex;
+  align-content: center;
   margin: auto;
   max-width: 1920px;
+  padding-top: 5%;
 }
 .content #introblock {
   color: var(--brand-light);
-  max-width: 33%;
-  margin-top: 15vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 800px;
+  max-height: 200px;
   padding: 1vw 2vw;
   border-style: solid;
   border-width: 7.5px;
@@ -162,8 +168,25 @@ header {
   font-size: calc(1rem + 1.25em);
 }
 .content #introblock h2 {
+  flex-basis: 25%;
   margin: 0;
   font-size: calc(1rem + 0.5em);
+}
+.content #intro-name {
+  flex-basis: 30%;
+}
+.content #introduction {
+  flex-basis: 70%;
+}
+.content #intro-img {
+  filter: drop-shadow(-4px -2px 10px var(--brand-color-glow));
+  width: 50%;
+}
+.content #into-more {
+  width: 100%;
+  display: block;
+  flex-basis: 70%;
+  align-self: flex-end;
 }
 
 .contentContainer {
