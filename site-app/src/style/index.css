@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lobster&display=swap");
 :root {
+  --brand-blue: #00B8F5;
+  --brand-green: #39EC54;
+  --brand-red: #f50000;
+  --brand-orange: #ff8902;
+  --brand-blue-light: #76ddff;
+  --brand-green-light: #adf7b8;
+  --brand-red-light: #ff7676;
+  --brand-orange-light: #ffc482;
+  --brand-blue-glow: rgba(118, 221, 255, 0.35);
+  --brand-green-glow: rgba(173, 247, 184, 0.35);
+  --brand-red-glow: rgba(255, 118, 118, 0.35);
+  --brand-orange-glow: rgba(255, 196, 130, 0.35);
+  --brand-light: #EAEAEC;
+  --brand-dark: #121214;
+  --brand-color: var(--brand-green);
+  --brand-color-light: var(--brand-green-light);
+  --brand-color-glow: var(--brand-green-glow);
+}
+
+:root {
   box-sizing: border-box;
   font-size: 18px;
   font-family: "Cinzel", serif;

@@ -1,5 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lobster&display=swap");
+:root {
+  --brand-blue: #00B8F5;
+  --brand-green: #39EC54;
+  --brand-red: #f50000;
+  --brand-orange: #ff8902;
+  --brand-blue-light: #76ddff;
+  --brand-green-light: #adf7b8;
+  --brand-red-light: #ff7676;
+  --brand-orange-light: #ffc482;
+  --brand-blue-glow: rgba(118, 221, 255, 0.35);
+  --brand-green-glow: rgba(173, 247, 184, 0.35);
+  --brand-red-glow: rgba(255, 118, 118, 0.35);
+  --brand-orange-glow: rgba(255, 196, 130, 0.35);
+  --brand-light: #EAEAEC;
+  --brand-dark: #121214;
+  --brand-color: var(--brand-green);
+  --brand-color-light: var(--brand-green-light);
+  --brand-color-glow: var(--brand-green-glow);
+}
+
+:root {
+  --brand-blue: #00B8F5;
+  --brand-green: #39EC54;
+  --brand-red: #f50000;
+  --brand-orange: #ff8902;
+  --brand-blue-light: #76ddff;
+  --brand-green-light: #adf7b8;
+  --brand-red-light: #ff7676;
+  --brand-orange-light: #ffc482;
+  --brand-blue-glow: rgba(118, 221, 255, 0.35);
+  --brand-green-glow: rgba(173, 247, 184, 0.35);
+  --brand-red-glow: rgba(255, 118, 118, 0.35);
+  --brand-orange-glow: rgba(255, 196, 130, 0.35);
+  --brand-light: #EAEAEC;
+  --brand-dark: #121214;
+  --brand-color: var(--brand-green);
+  --brand-color-light: var(--brand-green-light);
+  --brand-color-glow: var(--brand-green-glow);
+}
+
 header {
   width: 100%;
   position: fixed;
@@ -21,20 +61,45 @@ header {
 
 .nav-link {
   font-size: calc(0.9em + 0.75vw);
-  color: #39EC54;
-  text-shadow: 0px 0px 6px rgba(173, 247, 184, 0.35);
   font-weight: bold;
   padding: 1vh 0.35vw;
   text-decoration: none;
   transition: 1.5s;
 }
 .nav-link:hover {
-  color: #adf7b8;
-  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+  color: var(--brand-light);
+  text-shadow: 0px 0px 6px var(--brand-color-light);
 }
 
 .link-icon {
   font-weight: lighter;
+}
+
+.theme-bar {
+  width: 20vw;
+}
+.theme-bar button {
+  height: 1.5vh;
+  width: 1.5vh;
+  border-radius: 50%;
+  margin: 0.9vw 0.9vh;
+}
+.theme-bar #green {
+  box-shadow: 1px 0px 10px var(--brand-green);
+  border: var(--brand-green) 2px solid;
+  background: radial-gradient(circle, var(--brand-green) 35%, var(--brand-green-light) 83%);
+}
+.theme-bar #blue {
+  border: var(--brand-blue) 2px solid;
+  background: radial-gradient(circle, var(--brand-blue) 35%, var(--brand-blue-light) 83%);
+}
+.theme-bar #red {
+  border: var(--brand-red) 2px solid;
+  background: radial-gradient(circle, var(--brand-red) 35%, var(--brand-red-light) 83%);
+}
+.theme-bar #orange {
+  border: var(--brand-orange) 2px solid;
+  background: radial-gradient(circle, var(--brand-orange) 35%, var(--brand-orange-light) 83%);
 }
 
 #downbutton-container {
@@ -45,8 +110,8 @@ header {
 }
 
 .highlight {
-  color: #39EC54;
-  text-shadow: 0px 0px 6px rgba(173, 247, 184, 0.35);
+  color: var(--brand-color);
+  text-shadow: 0px 0px 6px var(--brand-green-glow);
   font-weight: bold;
   font-size: 1.15em;
 }
@@ -65,16 +130,16 @@ header {
   padding: 3em;
 }
 .contentWrapper section:nth-child(1) {
-  background-color: #121214;
+  background-color: var(--brand-dark);
 }
 .contentWrapper section:nth-child(2) {
-  background-color: #EAEAEC;
+  background-color: var(--brand-light);
 }
 .contentWrapper section:nth-child(3) {
-  background-color: #39EC54;
+  background-color: var(--brand-color);
 }
 .contentWrapper section:nth-child(4) {
-  background-image: repeating-linear-gradient(126deg, #121214 0vw 10vw, #EAEAEC 10vw 20vw, #39EC54 20vw 30vw);
+  background-image: repeating-linear-gradient(126deg, var(--brand-dark) 0vw 10vw, var(--brand-light) 10vw 20vw, var(--brand-color) 20vw 30vw);
 }
 
 .content {
@@ -83,14 +148,14 @@ header {
   max-width: 1920px;
 }
 .content #introblock {
-  color: #EAEAEC;
+  color: var(--brand-light);
   max-width: 33%;
   margin-top: 15vh;
   padding: 1vw 2vw;
   border-style: solid;
   border-width: 7.5px;
-  -o-border-image: linear-gradient(135deg, #39EC54 7.5%, rgba(217, 231, 237, 0) 9%, rgba(217, 231, 237, 0) 91%, #39EC54 92.5%) 1 1 1 1;
-     border-image: linear-gradient(135deg, #39EC54 7.5%, rgba(217, 231, 237, 0) 9%, rgba(217, 231, 237, 0) 91%, #39EC54 92.5%) 1 1 1 1;
+  -o-border-image: linear-gradient(135deg, var(--brand-color) 7.5%, rgba(217, 231, 237, 0) 9%, rgba(217, 231, 237, 0) 91%, var(--brand-color) 92.5%) 1 1 1 1;
+     border-image: linear-gradient(135deg, var(--brand-color) 7.5%, rgba(217, 231, 237, 0) 9%, rgba(217, 231, 237, 0) 91%, var(--brand-color) 92.5%) 1 1 1 1;
 }
 .content #introblock h1 {
   margin: 0;
