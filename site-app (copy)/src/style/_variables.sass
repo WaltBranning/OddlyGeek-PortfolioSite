@@ -1,0 +1,71 @@
+// Sitewide variables
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lobster&display=swap')
+@mixin cursive
+    font-family: 'Lobster', cursive
+
+@mixin print-type
+    font-family: 'Cinzel', serif
+
+
+
+// Sizing variables
+$max-width: 1920px
+
+// Brand color selections
+:root 
+    
+    $brand-blue:#00B8F5
+    $brand-green:#39EC54 
+    $brand-red:     #e11d1d
+    $brand-orange:  #ff8902
+
+    $brand-blue-light:   lighten($brand-blue, 25%)
+    $brand-green-light:  lighten($brand-green, 25%)
+    $brand-red-light:    lighten($brand-red, 25%)
+    $brand-orange-light: lighten($brand-orange, 25%)
+
+    $brand-blue-glow: adjust-color($brand-blue, $alpha:-.65, $lightness: 25%)
+    $brand-green-glow: adjust-color($brand-green, $alpha:-.65, $lightness: 25%)
+    $brand-red-glow: adjust-color($brand-red, $alpha:-.65, $lightness: 25%)
+    $brand-orange-glow: adjust-color($brand-orange, $alpha:-.65, $lightness: 25%)
+
+    --brand-blue:   #{$brand-blue}
+    --brand-green:  #{$brand-green}
+    --brand-red:    #{$brand-red}
+    --brand-orange: #{$brand-orange}
+
+    --brand-blue-light:   #{$brand-blue-light}
+    --brand-green-light:  #{$brand-green-light}
+    --brand-red-light:    #{$brand-red-light}
+    --brand-orange-light: #{$brand-orange-light}
+
+    --brand-blue-glow: #{$brand-blue-glow}
+    --brand-green-glow: #{$brand-green-glow}
+    --brand-red-glow: #{$brand-red-glow}
+    --brand-orange-glow: #{$brand-orange-glow}
+    
+
+    --brand-light:   #EAEAEC
+    --brand-dark:    #121214
+
+    --brand-color: var(--brand-green)
+    --brand-color-light: var(--brand-green-light)
+    --brand-color-glow: var(--brand-green-glow)
+
+// $brand-glow-light:  lighten($brand-color, 50%) 
+// $brand-glow-dark:   lighten($brand-color, 50%)
+// $brand-glow-color:  lighten($brand-color, 25%) 
+
+
+@mixin resp-font($resp-size, $base-size: 1rem)
+    font-size: calc( $base-size + $resp-size)
+
+// @mixin brand-stripe
+//     background-image: repeating-linear-gradient(126deg, var(--brand-dark) 0vw 10vw,var(--brand-light) 10vw 20vw, var(--brand-color) 20vw 30vw)
+
+// @mixin brand-highlight-color
+    // color: var(--brand-color)
+    // text-shadow: 0px 0px 6px adjust-color(var(--brand-color), $alpha:-.65, $lightness: 25%)
+
