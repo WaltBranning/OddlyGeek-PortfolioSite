@@ -2,7 +2,18 @@
 @import ./variables
 @import ./header
 
-.App
+    
+
+.highlight
+    @include brand-highlight-color
+    font-weight: bold
+    font-size: 1.15em
+
+.cursive
+    @include cursive
+
+.divider
+    height: 10vh
 
 .contentWrapper
     section
@@ -17,9 +28,29 @@
         background-color: $brand-color
     section:nth-child(4)
         @include brand-stripe
-        // background-image: repeating-linear-gradient(-45deg,transparent 0 20px,black 20px 40px, red 40px 60px)
+
+.content
+    display: flex
+    margin: auto
+    max-width: $max-width
+        
+    #introblock
+        color: $brand-light
+        max-width: 33%
+        margin-top: 15vh
+        padding: 1vw 2vw
+        border-style: solid
+        border-width: 7.5px
+        border-image: linear-gradient(135deg, $brand-color 7.5%, rgba(217,231,237,0) 9%, rgba(217,231,237,0) 91%, $brand-color 92.5%) 1 1 1 1
+        h1
+            margin: 0
+            @include resp-font(1.25em)
+        h2
+            margin: 0
+            @include resp-font(.5em)
+        
 .contentContainer
     max-width: $max-width
     margin: auto
 
-        
+

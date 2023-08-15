@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lobster&display=swap");
 header {
   width: 100%;
   position: fixed;
@@ -17,13 +19,44 @@ header {
   justify-content: space-evenly;
 }
 
-.header-link {
-  padding: 2vh 1vw;
+.nav-link {
+  font-size: calc(0.9em + 0.75vw);
+  color: #39EC54;
+  text-shadow: 0px 0px 6px rgba(173, 247, 184, 0.35);
+  font-weight: bold;
+  padding: 1vh 0.35vw;
   text-decoration: none;
-  color: #00B8F5;
+  transition: 1.5s;
 }
-.header-link:hover {
-  color: #EAEAEC;
+.nav-link:hover {
+  color: #adf7b8;
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+}
+
+.link-icon {
+  font-weight: lighter;
+}
+
+#downbutton-container {
+  margin-left: 50vw;
+  position: fixed;
+  bottom: 0px;
+  transform: rotate(45);
+}
+
+.highlight {
+  color: #39EC54;
+  text-shadow: 0px 0px 6px rgba(173, 247, 184, 0.35);
+  font-weight: bold;
+  font-size: 1.15em;
+}
+
+.cursive {
+  font-family: "Lobster", cursive;
+}
+
+.divider {
+  height: 10vh;
 }
 
 .contentWrapper section {
@@ -32,16 +65,40 @@ header {
   padding: 3em;
 }
 .contentWrapper section:nth-child(1) {
-  background-color: #2C2F3A;
+  background-color: #121214;
 }
 .contentWrapper section:nth-child(2) {
   background-color: #EAEAEC;
 }
 .contentWrapper section:nth-child(3) {
-  background-color: #00B8F5;
+  background-color: #39EC54;
 }
 .contentWrapper section:nth-child(4) {
-  background-image: repeating-linear-gradient(126deg, rgb(44, 47, 58) 0vw 10vw, rgb(234, 234, 236) 10vw 20vw, rgb(0, 184, 245) 20vw 30vw);
+  background-image: repeating-linear-gradient(126deg, #121214 0vw 10vw, #EAEAEC 10vw 20vw, #39EC54 20vw 30vw);
+}
+
+.content {
+  display: flex;
+  margin: auto;
+  max-width: 1920px;
+}
+.content #introblock {
+  color: #EAEAEC;
+  max-width: 33%;
+  margin-top: 15vh;
+  padding: 1vw 2vw;
+  border-style: solid;
+  border-width: 7.5px;
+  -o-border-image: linear-gradient(135deg, #39EC54 7.5%, rgba(217, 231, 237, 0) 9%, rgba(217, 231, 237, 0) 91%, #39EC54 92.5%) 1 1 1 1;
+     border-image: linear-gradient(135deg, #39EC54 7.5%, rgba(217, 231, 237, 0) 9%, rgba(217, 231, 237, 0) 91%, #39EC54 92.5%) 1 1 1 1;
+}
+.content #introblock h1 {
+  margin: 0;
+  font-size: calc(1rem + 1.25em);
+}
+.content #introblock h2 {
+  margin: 0;
+  font-size: calc(1rem + 0.5em);
 }
 
 .contentContainer {

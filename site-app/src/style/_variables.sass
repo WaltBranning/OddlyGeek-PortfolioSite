@@ -1,19 +1,37 @@
 // Sitewide variables
 
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lobster&display=swap')
+@mixin cursive
+    font-family: 'Lobster', cursive
+
+@mixin print-type
+    font-family: 'Cinzel', serif
+
+
+
 // Sizing variables
 $max-width: 1920px
 
     
 // This site will use three main branding color for different sections
 $brand-light:   #EAEAEC
-$brand-dark:    #2C2F3A
-$brand-color:   #00B8F5
+$brand-dark:    #121214
+// $brand-color:   #00B8F5
+$brand-color: #39EC54
+
+$brand-glow-light:  lighten($brand-color, 50%) 
+$brand-glow-dark:   lighten($brand-color, 50%)
+$brand-glow-color:  lighten($brand-color, 25%) 
 
 
 @mixin resp-font($resp-size, $base-size: 1rem)
     font-size: calc( $base-size + $resp-size)
 
 @mixin brand-stripe
-    background-image: repeating-linear-gradient(126deg, rgba(44,47,58,1) 0vw 10vw,rgba(234,234,236,1) 10vw 20vw, rgba(0,184,245,1) 20vw 30vw)
+    background-image: repeating-linear-gradient(126deg, $brand-dark 0vw 10vw,$brand-light 10vw 20vw, $brand-color 20vw 30vw)
 
+@mixin brand-highlight-color
+    color: $brand-color
+    text-shadow: 0px 0px 6px adjust-color($brand-color, $alpha:-.65, $lightness: 25%)
 

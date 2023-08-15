@@ -6,15 +6,15 @@ function HeaderComponent () {
         <header >
             <div className='header-content'>
                 <div className='headerLinks' id='navLinks'>
-                    <a href='#' className='header-link'>What</a>
-                    <a href='#' className='header-link'>Professional</a>
-                    <a href='#' className='header-link'>Projects</a>
-                    <a href='#' className='header-link'>Who</a>
+                    <a href='#' className='nav-link'>What</a>
+                    <a href='#' className='nav-link'>Professional</a>
+                    <a href='#' className='nav-link'>Projects</a>
+                    <a href='#' className='nav-link'>Who</a>
                 </div>
                 <div className='headerLinks' id='extraLinks'>
-                <a href='https://www.linkedin.com/in/walter-branning' className='header-link pi pi-linkedin'></a>
-                <a href='https://github.com/WaltBranning' className='header-link pi pi-github'></a>
-                <a href='mailto:Walter@oddlygeek.com' className='header-link pi pi-envelope'></a>
+                <a href='https://www.linkedin.com/in/walter-branning' className='link-icon nav-link pi pi-linkedin'></a>
+                <a href='https://github.com/WaltBranning' className='link-icon nav-link pi pi-github'></a>
+                <a href='mailto:Walter@oddlygeek.com' className='link-icon nav-link pi pi-envelope'></a>
                 </div>
             </div>
         </header>
