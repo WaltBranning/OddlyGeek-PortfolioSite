@@ -3,14 +3,19 @@ import {useState} from 'react';
 import 'primeicons/primeicons.css'
 
 function changeTheme (e) {
-    console.log(e)
-
+    let root = document.documentElement;
+    let new_color = getComputedStyle(root).getPropertyValue(`--brand-${e}`);
+    let new_color_light = getComputedStyle(root).getPropertyValue(`--brand-${e}-light`);
+    let new_color_glow = getComputedStyle(root).getPropertyValue(`--brand-${e}-glow`);
+    root.style.setProperty('--brand-color', new_color);
+    root.style.setProperty('--brand-color-light', new_color_light);
+    root.style.setProperty('--brand-color-glow', new_color_glow);
 }
 
 function HeaderComponent () {
 
-    const [brandColor, setBrandColor] = useState('Hello Brand Color!');
-    console.log(brandColor)
+    // const [brandColor, setBrandColor] = useState('Hello Brand Color!');
+    // console.log(brandColor)
 
     return (
         <header >

@@ -2,15 +2,15 @@
 :root {
   --brand-blue: #00B8F5;
   --brand-green: #39EC54;
-  --brand-red: #f50000;
+  --brand-red: #e11d1d;
   --brand-orange: #ff8902;
   --brand-blue-light: #76ddff;
   --brand-green-light: #adf7b8;
-  --brand-red-light: #ff7676;
+  --brand-red-light: #f08d8d;
   --brand-orange-light: #ffc482;
   --brand-blue-glow: rgba(118, 221, 255, 0.35);
   --brand-green-glow: rgba(173, 247, 184, 0.35);
-  --brand-red-glow: rgba(255, 118, 118, 0.35);
+  --brand-red-glow: rgba(240, 141, 141, 0.35);
   --brand-orange-glow: rgba(255, 196, 130, 0.35);
   --brand-light: #EAEAEC;
   --brand-dark: #121214;
