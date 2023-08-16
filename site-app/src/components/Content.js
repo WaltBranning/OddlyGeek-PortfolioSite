@@ -30,10 +30,18 @@ function ContentComponent () {
                 <div id='intro-more'>
 
                     <div id='intro-more-content'>
-                        <span className='highlight hover-glow' onClick={()=>{
+                        <p id='more-press' className='highlight hover-glow' onClick={()=>{
+                            const default_state = "Read More";
                             var tog = document.getElementById('intro-content');
                             tog.classList.toggle("toggle-state");
-                        }}>Read More</span>
+                            var tog_state = document.getElementById('more-press');
+                            if (tog_state.innerHTML === default_state) {
+                                tog_state.innerHTML = "Show Less";
+                        } else {
+                            tog_state.innerHTML = default_state;
+                        };
+
+                        }}>Read More</p>
                     </div>
 
                 </div>
