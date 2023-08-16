@@ -65,11 +65,12 @@ header {
   font-weight: bold;
   padding: 1vh 0.35vw;
   text-decoration: none;
-  transition: 1.5s;
 }
-.nav-link:hover {
+
+.hover-glow:hover {
   color: var(--brand-light);
   text-shadow: 0px 0px 6px var(--brand-color-light);
+  transition: 1s;
 }
 
 .link-icon {
@@ -149,44 +150,62 @@ header {
   margin: auto;
   max-width: 1920px;
   padding-top: 5%;
+  position: relative;
 }
-.content #introblock {
-  color: var(--brand-light);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  max-width: 800px;
-  max-height: 200px;
-  padding: 1vw 2vw;
-  border-style: solid;
-  border-width: 7.5px;
-  -o-border-image: linear-gradient(135deg, var(--brand-color) 7.5%, rgba(217, 231, 237, 0) 9%, rgba(217, 231, 237, 0) 91%, var(--brand-color) 92.5%) 1 1 1 1;
-     border-image: linear-gradient(135deg, var(--brand-color) 7.5%, rgba(217, 231, 237, 0) 9%, rgba(217, 231, 237, 0) 91%, var(--brand-color) 92.5%) 1 1 1 1;
-}
-.content #introblock h1 {
-  margin: 0;
-  font-size: calc(1rem + 1.25em);
-}
-.content #introblock h2 {
-  flex-basis: 25%;
-  margin: 0;
-  font-size: calc(1rem + 0.5em);
-}
-.content #intro-name {
-  flex-basis: 30%;
-}
-.content #introduction {
-  flex-basis: 70%;
+.content #intro-more-content {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  cursor: pointer;
 }
 .content #intro-img {
   filter: drop-shadow(-4px -2px 10px var(--brand-color-glow));
   width: 50%;
 }
-.content #into-more {
-  width: 100%;
-  display: block;
-  flex-basis: 70%;
-  align-self: flex-end;
+
+.introblock-item {
+  position: relative;
+  align-content: center;
+  margin: auto;
+  color: var(--brand-light);
+  max-width: 800px;
+  border-style: solid;
+  border-width: 7.5px;
+  -o-border-image: linear-gradient(135deg, var(--brand-color) 7.5%, rgba(217, 231, 237, 0) 9%, rgba(217, 231, 237, 0) 91%, var(--brand-color) 92.5%) 1 1 1 1;
+     border-image: linear-gradient(135deg, var(--brand-color) 7.5%, rgba(217, 231, 237, 0) 9%, rgba(217, 231, 237, 0) 91%, var(--brand-color) 92.5%) 1 1 1 1;
+}
+.introblock-item p {
+  text-indent: 50px;
+}
+.introblock-item #introblock {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  -moz-column-gap: 2.5%;
+       column-gap: 2.5%;
+  max-height: 200px;
+  padding: 1vw 2vw;
+}
+.introblock-item #introblock h1 {
+  margin: auto;
+  font-size: calc(1rem + 1.25em);
+}
+.introblock-item #introblock h2 {
+  flex-basis: 25%;
+  margin: 0;
+  font-size: calc(1rem + 0.5em);
+}
+.introblock-item #intro-name {
+  grid-area: 1/1/3/2;
+  border-right: var(--brand-color-light) 3px solid;
+}
+.introblock-item #introduction {
+  padding: 5px;
+  grid-area: 1/2/2/4;
+}
+.introblock-item #intro-content {
+  position: relative;
 }
 
 .contentContainer {

@@ -21,10 +21,10 @@ function HeaderComponent () {
         <header >
             <div className='header-content'>
                 <div className='headerLinks' id='navLinks'>
-                    <a href='#' className='nav-link highlight'>What</a>
-                    <a href='#' className='nav-link highlight'>Professional</a>
-                    <a href='#' className='nav-link highlight'>Projects</a>
-                    <a href='#' className='nav-link highlight'>Who</a>
+                    <a href='#' className='nav-link highlight hover-glow'>What</a>
+                    <a href='#' className='nav-link highlight hover-glow'>Professional</a>
+                    <a href='#' className='nav-link highlight hover-glow'>Projects</a>
+                    <a href='#' className='nav-link highlight hover-glow'>Who</a>
                 </div>
                 <div className='headerLinks' id='extraLinks'>
                     <div className='theme-bar'>
@@ -33,9 +33,9 @@ function HeaderComponent () {
                         <button className='theme-button' id='red' onClick={() => changeTheme('red')}></button>
                         <button className='theme-button' id='orange'onClick={() => changeTheme('orange')}></button>
                     </div>
-                    <a href='https://www.linkedin.com/in/walter-branning' className='link-icon nav-link highlight pi pi-linkedin'></a>
-                    <a href='https://github.com/WaltBranning' className='link-icon nav-link highlight pi pi-github'></a>
-                    <a href='mailto:Walter@oddlygeek.com' className='link-icon nav-link highlight pi pi-envelope'></a>
+                    <a href='https://www.linkedin.com/in/walter-branning' className='link-icon nav-link highlight hover-glow pi pi-linkedin'></a>
+                    <a href='https://github.com/WaltBranning' className='link-icon nav-link highlight hover-glow pi pi-github'></a>
+                    <a href='mailto:Walter@oddlygeek.com' className='link-icon nav-link highlight hover-glow pi pi-envelope'></a>
                 </div>
             </div>
         </header>
