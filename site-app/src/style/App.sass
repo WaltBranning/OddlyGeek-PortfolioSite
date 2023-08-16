@@ -40,7 +40,7 @@
     position: relative
 
     & #intro-more-content
-        width: 100px
+        width: 150px
         position: absolute
         bottom: 0
         left: 50%
@@ -62,9 +62,13 @@
     border-image: linear-gradient(135deg, var(--brand-color) 7.5%, rgba(217,231,237,0) 9%, rgba(217,231,237,0) 91%, var(--brand-color) 92.5%) 1 1 1 1
 
     p
+        @include resp-font(.75rem, .25rem)
         text-indent: 50px
+        text-align: justify
+        
 
     & #introblock
+        transition: 1s
         display: inline-grid
         grid-template-columns: repeat(3, 1fr)
         grid-template-rows: repeat(2, 1fr)
@@ -91,10 +95,16 @@
         grid-area: 1 / 2 / 2 / 4
 
     & #intro-content
+        transition: all 3s ease
+        height: 25rem
+        overflow: hidden
+        padding: 0 5% 
         position: relative  
         
 .contentContainer
     max-width: $max-width
     margin: auto
 
-
+.toggle-state
+    height: 0 !important
+    
