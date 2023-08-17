@@ -62,6 +62,7 @@ header {
 
 .nav-link {
   font-size: calc(0.9em + 0.75vw);
+  cursor: pointer;
   font-weight: bold;
   padding: 1vh 0.35vw;
   text-decoration: none;

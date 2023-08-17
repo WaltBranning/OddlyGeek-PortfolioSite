@@ -1,9 +1,9 @@
 import 'primeicons/primeicons.css'
 import meImage from '../resources/imgs/me.png'
 
-function ContentComponent () {
+function ContentComponent ({sectionRef}) {
     return (
-    <div className='contentWrapper'>
+    <div className='contentWrapper' ref={sectionRef}>
         <section>
             <div className="content" id="what-section">
 
