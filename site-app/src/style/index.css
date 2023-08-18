@@ -14,9 +14,10 @@
   --brand-orange-glow: rgba(255, 196, 130, 0.35);
   --brand-light: #EAEAEC;
   --brand-dark: #121214;
-  --brand-color: var(--brand-green);
-  --brand-color-light: var(--brand-green-light);
-  --brand-color-glow: var(--brand-green-glow);
+  --brand-color: var(--brand-orange);
+  --brand-color-light: var(--brand-orange-light);
+  --brand-color-glow: var(--brand-orange-glow);
+  --highlight-color: var(--brand-color);
 }
 
 :root {

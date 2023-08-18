@@ -4,7 +4,7 @@ import meImage from '../resources/imgs/me.png'
 function ContentComponent ({sectionRef}) {
     return (
     <div className='contentWrapper' ref={sectionRef}>
-        <section>
+        <section id="who">
             <div className="content" id="what-section">
 
                 <div className='introblock-item' >
@@ -16,8 +16,6 @@ function ContentComponent ({sectionRef}) {
                         <div id='introduction'>
                             <h2>I am an aspiring Software Engineer. Let's create something awesome!</h2>
                         </div>
-                    
-
                     </div>
                         <div id='intro-content' className='toggle-state'>
                             <p><span className='highlight'>Who am I, you ask?</span> Well, I'm a devoted husband and father, my family holds the utmost importance in my life and I cherish this job most of all. Becoming the best provider and role model for them is a job I take very seriously. Striving for excellence not only aligns with my natural desire to take pride in my work but also ensures that my family, too, can take pride in what I do.
@@ -50,25 +48,33 @@ function ContentComponent ({sectionRef}) {
         </section>
 
         {/* <div className='divider'></div> */}
-        <section>
+        <section id='resume'>
             <div className="content" id="pro-section">
-                <h1>Professional</h1>
+                <h1>Experience and Employment History</h1>
+                <div id='summary' className='exp-entry'>
+                    <h2>Professional Summary:</h2>
+                    <p>Building, Learning, Creating - These words reflect my passion and drive to learn how things work, then take that
+                    knowledge and apply it. Possessing a naturally curious mind that enjoys discovering why and how things work. While being blessed with an ability to quickly grasp concepts and apply them. This ability along with a willing eagerness to learn, allow for quick adaptation to the meet the requirements of the task at hand. Give me a challenge and I will rise to meet it.</p>
+                </div>
+                <div className='exp-entry'>
+                    
+                </div>
             </div>
         </section>
 
         {/* <div className='divider'></div> */}
-        <section>
+        <section id='projects'>
             <div className="content" id="project-section">
                 <h1>Projects</h1>
             </div>
         </section>
 
         {/* <div className='divider'></div> */}
-        <section>
+        {/* <section>
             <div className="content" id="who-section">
                 <h1>Who</h1>
             </div>
-        </section>
+        </section> */}
     </div>
       )
 }
